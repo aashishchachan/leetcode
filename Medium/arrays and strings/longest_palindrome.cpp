@@ -36,8 +36,6 @@ string longestPalindrome(string s) {
 
 
 int main(){
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
     string st;
     cin >> st;
     cout<<longestPalindrome(st);
