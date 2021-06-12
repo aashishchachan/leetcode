@@ -28,16 +28,8 @@ int lengthOfLongestSubstring(string s) {
 
 
 int main(){
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
     string st;
     cin >> st;
-    // map<int, int> test;
-    // cout << test.count(3)<<endl;
-    // test[2] = 3;
-    // cout << test.count(2)<<endl;
-    // test.erase(2);
-    // cout << test.count(2)<<endl;
     cout<<lengthOfLongestSubstring(st);
     return 0;
 }
