@@ -21,8 +21,19 @@ public:
     }
 
     void trav_iterative(TreeNode * root, vector <int> &sol){
-        
-
+        stack<TreeNode *> stk;
+        TreeNode *temp = root;
+        while(!stk.empty() || temp!=nullptr){
+            while(temp !=nullptr){
+                stk.push(temp);
+                temp = temp->left;
+            }
+            temp = stk.top();
+            stk.pop();
+            sol.push_back(temp->val);
+            temp = temp->right;
+        }
+        return;
     }
 
 
