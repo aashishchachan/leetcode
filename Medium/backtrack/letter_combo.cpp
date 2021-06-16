@@ -31,9 +31,12 @@ vector<string> joining(string a, vector<string> str){
 vector <string> letterCombinations(string digits){
     vector <string> str = formation(digits);
     vector <string> sol;
+    if(str.size()==0) return sol;
     string m = str[str.size()-1];
+    
     for (int i = 0; i<m.length(); i++){
-        sol.push_back(m[i]+"");
+        string s (1, m[i]);
+        sol.push_back(s);
     }
     for (int i = str.size() - 2; i >= 0; i--){
         sol = joining(str[i], sol);
@@ -43,6 +46,8 @@ vector <string> letterCombinations(string digits){
 
 int main(){
     string digits;
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
     cin >> digits;
     vector <string> sol =letterCombinations(digits);
     for(int i = 0; i < sol.size(); i++){
