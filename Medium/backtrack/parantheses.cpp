@@ -49,5 +49,5 @@ int main(){
     for(int i = 0; i < sol.size(); i++){
         cout << sol[i] << endl;
     }
-    return 0;
+    return 0;   
 }
