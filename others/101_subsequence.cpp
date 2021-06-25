@@ -11,7 +11,6 @@ using namespace std;
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL);
 #define external_io() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout);
 
-// solved in O(n), seems to be correct, can't find mistake
 // tle on:
 // 1
 // 200000
@@ -32,6 +31,8 @@ void sequence(string str){
     vector<int> sol(str.length());
     int empty_ques = 0;
     int num = 0;
+    int k= vec.size();
+    cout <<k<<endl;
     while(empty_ques<vec.size()){
         char curr = 'a';
         num++;
@@ -47,6 +48,7 @@ void sequence(string str){
                 
             }
         }
+        cout << empty_ques << endl;
     }
     cout << num << endl;
     for(int i=0; i < sol.size(); i++){
@@ -57,7 +59,7 @@ void sequence(string str){
 }
 
 int main(){
-    fast_cin();
+    //fast_cin();
     external_io();
     int t;
     cin >> t;
