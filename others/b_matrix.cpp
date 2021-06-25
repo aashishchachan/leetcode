@@ -1,3 +1,7 @@
+// Find out the number of operations required to make a square matrix beautiful.
+// A beautiful matrix is where sum of each row and column is equal.
+// In each operation, value of a cell can be incremented by one.
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -36,6 +40,9 @@ int main(){
     for(int i=0; i<n; i++){
         sol += sum - row[i];
     }
+    
+    // straightforward approach : (max_sum)*n - (total_sum) 
+
     cout<<sol<<endl;
     return 0;
 }

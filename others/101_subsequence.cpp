@@ -1,9 +1,21 @@
+// Given a binary string containing n zeroes and ones. Divide it into min. number of subsequences,
+// where, each char belonging to one subsequence only, subsequence should not have adjaccent zeroes and ones.
+// valid sequence: '010101010'; not valid: '0101011'
+// sum of n over all test cases doesn't exceed 2*10exp(5)
+// output: min no. of subsequences, in next line print n integers, where ai is the number of subsequence i-th char of
+// s belongs to.
+
 #include <bits/stdc++.h>
 using namespace std;
 
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL);
 #define external_io() freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout);
 
+// solved in O(n), seems to be correct, can't find mistake
+// tle on:
+// 1
+// 200000
+// 01110111111011110101011011111001110111011111100011101100011110111111111110111100110111111100011111010100010111101011111011111111100111100111111111110111111111101011001110100111111110100101100011110100111101101101111111100110100100011011010111011011111100110111101101111111101111001111101110101111010010111100011001111111111101011011111111111011011011111111101100111111100111101111111110111110011011011111111011110111100010010111111011111111111111111111110111011111111001000101111110110111100111101101...
 void sequence(string str){
     vector<queue<pair<char, int>>> vec;
     for (int i = 0; i<str.length(); ){
@@ -59,7 +71,7 @@ int main(){
     return 0;
 }
 
-
+// this one was accepted.
 // #include<stdio.h>
 // #include<bits/stdc++.h>
 // #include<math.h>

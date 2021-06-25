@@ -1,3 +1,5 @@
+// Given the array of sides, count the number of possible triangles. 
+
 #include <bits/stdc++.h>
 using namespace std;
 
