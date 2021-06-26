@@ -10,12 +10,12 @@ void sortColors(vector<int>& nums) {
             if(o>0) nums[z+o-1]=1;
             if(t>0) nums[z+o+t-1]=2;
         }
-        if(nums[i]==1){
+        else if(nums[i]==1){
             o++;
             nums[z+o-1]=1;
             if(t>0) nums[z+o+t-1]=2;
         }
-        if(nums[i]==2){
+        else if(nums[i]==2){
             t++;
             nums[z+o+t-1]=2;
         }
