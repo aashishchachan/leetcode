@@ -3,3 +3,4 @@ output.txt
 *.exe
 .cph
 .vscode
+*.bin
