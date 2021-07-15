@@ -1,1 +1,0 @@
-// Given two arrays, check if they are rotation of each other. 
