@@ -4,3 +4,6 @@ output.txt
 .cph
 .vscode
 *.bin
+notes.cpp
+oops.cpp
+dbms.cpp
